@@ -33,3 +33,83 @@
 .intro-data>td:nth-child(2) {
     padding-left: 35px;
 }
+
+/* tugas 2b */
+.title-2b {
+    font-family: calibri;
+   letter-spacing: 0.8px;
+   margin-top: 60px;
+   color: #4e4e4e;
+}
+.container {
+ position: relative;
+ padding :20px;
+ width: 25%;
+}
+
+.image {
+ opacity: 1;
+ display: block;
+ width: 100%;
+ height: auto;
+ transition: .5s ease;
+ backface-visibility: hidden;
+}
+
+.middle {
+ transition: .5s ease;
+ opacity: 0;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ -ms-transform: translate(-50%, -50%);
+ text-align: center;
+}
+
+.container:hover .image {
+ opacity: 0.3;
+}
+
+.container:hover .middle {
+ opacity: 1;
+}
+.text {
+ background-color: #222831;
+ color: white;
+ letter-spacing: 0.9px;
+ font-family: calibri;
+ font-size: 16px;
+ padding: 16px 32px;
+}
+.jam-tayang {
+   padding: 15px;
+   background-color : #222831;
+   margin: 10px;
+   color: white;
+   margin-top: 25px;
+   font-family: calibri;
+}
+.jam-tayang:first-child{
+   margin-left: 0px;
+}
+.jam-tayang:last-child {
+   margin-right: 0px;
+}
+
+/* index page */
+.button-task {
+    margin: 80px 0px;
+}
+.button-task > a {
+    background: #222831;
+    color: #fff;
+    padding: 19px 110px;
+    font-family: system-ui;
+    text-decoration: none;
+}
+.button-task > a:hover , .button-task > a:focus , .button-task > a:active {
+    background-color: #951555;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
